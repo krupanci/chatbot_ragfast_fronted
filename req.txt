@@ -5,7 +5,11 @@ langgraph
 langgraph-checkpoint-sqlite
 langchain-text-splitters>=0.3.0
 langchain-huggingface
-langchain-core
+langchain-core==0.3.16
+
+
+
+
 
 # FastAPI Backend
 fastapi
