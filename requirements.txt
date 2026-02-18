@@ -1,0 +1,51 @@
+langchain>=1.0.0
+langchain-google-genai
+langchain_groq
+langgraph
+langgraph-checkpoint-sqlite
+langchain-text-splitters>=0.3.0
+langchain-huggingface
+langchain-core==0.3.16
+
+
+
+
+
+# FastAPI Backend
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
+python-jose[cryptography]
+passlib[bcrypt]
+sqlalchemy
+
+## pdf
+pypdf
+
+## Rate limiting (if used)
+slowapi
+
+# Frontend
+streamlit
+streamlit-autorefresh
+requests
+
+
+# Environment Management
+python-dotenv
+
+
+
+# ML Utilities
+numpy
+scikit-learn
+
+#huggingface
+langchain-huggingface
+huggingface-hub
+
+# rag
+#chromadb
+sentence-transformers
+ 
