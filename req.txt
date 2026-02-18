@@ -1,20 +1,11 @@
-
-# LangChain Core
-langchain
-langchain-core
-langchain-community
-langchain-chroma
-
-# Google Gemini Integration
+langchain>=1.0.0
 langchain-google-genai
 langchain_groq
-google-generativeai
-
-
-# LangGraph & Memory
 langgraph
 langgraph-checkpoint-sqlite
 langchain-text-splitters>=0.3.0
+langchain-huggingface
+langchain-core
 
 # FastAPI Backend
 fastapi
