@@ -233,7 +233,7 @@ def register_user(username, email, password):
         response = requests.post(
             f"{API_BASE_URL}/auth/register",
             json={"username": username, "email": email, "password": password},
-            timeout=10
+            timeout=120
         )
         if response.status_code == 201:
             data = response.json()
