@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 from langchain_core.messages import HumanMessage
+
 import time
 from dotenv import load_dotenv
 import os
@@ -107,7 +108,7 @@ def handle_api_error(response):
 def safe_api_call(method, endpoint, **kwargs):
     """Execute API call with centralized error handling"""
     url = f"{API_BASE_URL}{endpoint}"
-    timeout = kwargs.pop("timeout", 70)
+    timeout = kwargs.pop("timeout", 120)
     
     
     if is_authenticated():
@@ -314,7 +315,7 @@ def send_message_stream(message, thread_id):
         "POST",
         "/chat",
         json={"message": message, "thread_id": thread_id},
-        timeout=90
+        timeout=120
     )
 
     if response is None:
